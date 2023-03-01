@@ -8,7 +8,7 @@ import pandas as pd
 
 
 app = Dash()
-
+server = app.server
 
 
 def f(s):
