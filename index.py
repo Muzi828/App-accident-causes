@@ -1,17 +1,10 @@
 from dash import Dash,html,dcc,Output,Input,State,dash_table
 import dash_bootstrap_components as dbc
+
 import re
 
 from fuzzywuzzy import process
 import pandas as pd
-
-
-
-
-
-
-
-
 import numpy as np 
 
 #间接原因：管理上的问题
@@ -198,15 +191,6 @@ all_causes = np.concatenate([indirect_causes,
 # 满足的功能:
 ## 1. 可以实现针对分类号的精确或者模糊查找
 ## 2. 可以实现针对输入内容的模糊匹配查找
-
-
-
-
-
-
-
-
-
 
 
 
@@ -399,4 +383,4 @@ def update(n_clicks,v):
 
 
 if __name__  == '__main__':
-    app.run_server(debug=False)
+    app.run_server(debug=True)
